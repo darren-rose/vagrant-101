@@ -1,0 +1,41 @@
+task up(type:Exec) {
+    group  'vagrant'
+    description  'start the virtual machine'
+
+    commandLine 'vagrant',  'up'
+}
+
+task status(type:Exec) {
+    group  'vagrant'
+    description  'status of the virtual machine'
+
+    commandLine 'vagrant', 'status'
+}
+
+task suspend(type:Exec) {
+    group  'vagrant'
+    description  'suspend the virtual machine'
+
+    commandLine 'vagrant', ' suspend'
+}
+
+task reload(type:Exec) {
+    group  'vagrant'
+    description  'reload changes the virtual machine'
+
+    commandLine 'vagrant', 'reload'
+}
+
+task halt(type:Exec) {
+    group  'vagrant'
+    description  'halt the virtual machine'
+
+    commandLine 'vagrant', 'halt'
+}
+
+task destroy(type:Exec) {
+    group  'vagrant'
+    description  'destroy the virtual machine'
+
+    commandLine 'vagrant', 'destroy'
+}
